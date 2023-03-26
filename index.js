@@ -1,5 +1,11 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  let seenNumbers = {};
+  for (number of array) {
+    let complement = target - number;
+    if (seenNumbers[complement]) return true;
+    seenNumbers[number] = true;
+  }
+  return false;
 }
 
 /* 

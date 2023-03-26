@@ -2,6 +2,7 @@ function hasTargetSum(array, target) {
   let seenNumbers = {};
   for (number of array) {
     let complement = target - number;
+    console.log(complement);
     if (seenNumbers[complement]) return true;
     seenNumbers[number] = true;
   }
